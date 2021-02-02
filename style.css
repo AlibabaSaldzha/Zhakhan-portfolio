@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: darkslategrey;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+}
+.logo {
+  cursor: pointer;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+  color: #0088a9;
+}
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+body {
+  background: #f9ed69;
+  font-family: "Baloo Tamma 2", cursive;
+}
+h1 {
+  color: #6a2c70;
+}
+h2 {
+  color: #b83b5e;
+}
+
+.m-heading {
+  font-family: "Roboto Slab", serif;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+/* Aligning items in main row */
+.main_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Changing Name Font sixe */
+.main_row h1 {
+  font-size: 5rem;
+}
+
+/* Making the main image the size of the screen */
+.main_row img {
+  width: auto;
+  height: 100vh;
+}
+
+/* About Section */
+#about {
+  background: #f08a5d;
+  border-radius: 0.5rem;
+}
+
+.card {
+  border-bottom: 8px solid #f08a5d;
+}
+/* footer */
+.footer {
+  background: #303036;
+  color: #d3d3d3;
+  height: 150px;
+  position: relative;
+}
+.footer .footer-content {
+  border: 1px solid red;
+  height: 100px;
+  display: flex;
+}
+.footer .footer-content .footer-section {
+  flex: 1;
+  border: 1px solid white;
+}
+.footer .footer-bottom {
+  background: #343a40;
+  background-size: cover;
+  color: #686868;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+.footer .footer-section-about h1 {
+  background-color: #343a40;
+  color: #686868;
+}
+
+.wrapper {
+  display: inline-flex;
+}
+.wrapper .icon {
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span i {
+  line-height: 60px;
+  font-size: 25px;
+}
+.wrapper .icon .tooltip {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover span {
+  color: #fff;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before {
+  background: #3b5999;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before {
+  background: #46c1f6;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before {
+  background: #e1306c;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before {
+  background: #333;
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip:before {
+  background: #de463b;
+}
